@@ -1,0 +1,135 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*header style*/
+header{
+    display: flex;
+     flex-direction:row;
+}
+.likes {
+    display: block;
+    width: 110px;
+    height: 110px;
+    margin: 0 auto;
+    background: url(https://www.bing.com/images/search?view=detailV2&ccid=avxhtQqr&id=D5D437EDB627F2E67F415441367EDC6961B4652F&thid=OIP.avxhtQqr5FoubGjq4sIXugHaEo&mediaurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.6afc61b50aabe45a2e6c68eae2c217ba%3frik%3dL2W0YWncfjZBVA%26riu%3dhttp%253a%252f%252fwww.shutterstock.com%252fblog%252fwp-content%252fuploads%252fsites%252f5%252f2016%252f03%252ffall-trees-road-1.jpg%26ehk%3dKA%252bzFrmYoWsdK4k7v%252fgfNkd1T2rdnNtpF5ICdLIxAeM%253d%26risl%3d%26pid%3dImgRaw%26r%3d0&exph=1800&expw=2880&q=images&simid=608010843710567103&FORM=IRPRST&ck=426AE96658F5D56115A38988E7D7546D&selectedIndex=0)0 0 no-repeat;
+    background-size: 3000%;
+    animation: like-gif steps(28)1s infinite both;
+}
+.pause{
+    animation-play-state: paused;
+}
+div{
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+}
+@keyframes like-gif{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 100%;
+    }
+}
+.nav-item-container{
+    align-items: center;
+}
+.nav-item-container>nav{
+    margin-right: 32px;
+    font-size: 14px;
+    color: blueviolet;
+}
+.brand-name{
+    color: red;
+    align-items: center;
+    font-size: 24px;
+}
+.nav-list {
+    list-style-type: none; 
+    row-gap: 20px;
+    display:grid;
+
+}
+.nav-list >li{
+    margin-right: 40px;
+    justify-items: right;
+}
+.nav-list>li:last-child{
+    margin-right: 0;
+}
+.user-img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    background: grey;
+}
+/*header styles*/
+/*hero section style*/
+.hero>.image-container{
+    margin: 0 auto;
+}
+.image{
+    height: 30px;
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid rgb(207, 41, 41);
+    background: rgb(120, 25, 25);
+}
+/*hero section*/
+/*title section body*/
+.product> .title-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title-section>.title{
+    text-transform: uppercase;
+    color: orange;
+}
+.search-container input{
+    height: 40px;
+    border-radius: 24px;
+    outline: none;
+    border: 1px solid orange;
+    padding: 8px ;
+}
+
+/*title section body*/
+/*pills styles*/
+.pills{
+    display: flex;
+    margin-bottom: 16px;
+}
+.pills.pills-item{
+    border-radius: 24px;
+    border: 1px solid orange;
+    margin-right: 16px;
+    padding: 8px;
+}
+.pill-count{
+    border-radius: 50%;
+    background-color: blueviolet;
+    color: white;
+    font-size: 12px;
+    padding: 8px;
+
+}
+/*pills styles*/
+/*food card styles*/
+.food-card-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 16px;
+}
+.food-card{
+    border: 1px solid orange;
+    border-radius: 8px;
+    box-shadow: 0 3px orange;
+
+}
+.food-card-thumbnail{
+    height:auto ;
+    width: 100%;
+}
+/*food card styles*/
